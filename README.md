@@ -35,11 +35,15 @@ Dipendenze: OpenGL, ALSA e GNU C++ Compiler. Oltre alla versione specifica per L
 
 Dopo aver scaricato la cartella per macOS, bisogna rendere il file basilico esegiobile dando dal Terminale (dentro la cartella, dove si trova il file denominato "basilico") il seguente comando:
 
+```bash
 chmod +x basilico
+```
 
 e si potrà quindi metterlo in esecuzione attraverso il comando seguente:
 
+```bash
 ./basilico
+```
 
 ## Uso
 

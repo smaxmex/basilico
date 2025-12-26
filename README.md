@@ -28,9 +28,15 @@ Assicurati di estrarre il contenuto del pacchetto in una cartella con permessi d
 
 Dipendenze: OpenGL, ALSA e GNU C++ Compiler. Oltre alla versione specifica per Linux, la versione di BAS.I.LI.CO. per Windows funziona pure usando WINE, permettendo così di creare facilmente software per Windows anche senza usare tale sistema operativo.
 
-### MacOS
+### macOS
 
-La cartella per MacOS non è stata ancora predisposta, ma si può già usare BAS.I.LI.CO. compilandolo dai sorgenti, tramite QB64.
+Dopo aver scaricato la cartella per macOS, bisogna rendere il file basilico esegiobile dando dal Terminale (dentro la cartella, dove si trova il file denominato "basilico") il seguente comando:
+
+chmod +x basilico
+
+e si potrà quindi metterlo in esecuzione attraverso il comando seguente:
+
+./basilico
 
 ## Uso
 

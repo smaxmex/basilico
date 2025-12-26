@@ -20,6 +20,9 @@ https://github.com/smaxmex/basilico/archive/refs/heads/windows.zip
 Per Linux:
 https://github.com/smaxmex/basilico/archive/refs/heads/linux.zip
 
+Per macOS:
+https://github.com/smaxmex/basilico/archive/refs/heads/mac.zip
+
 ### Windows
 
 Assicurati di estrarre il contenuto del pacchetto in una cartella con permessi di scrittura completi (in caso contrario potrebbero verificarsi errori dell'Ambiente di Sviluppo o di compilazione). Si consiglia di aggiungere la cartella BAS.I.LI.CO. alla lista bianca del tuo antivirus.

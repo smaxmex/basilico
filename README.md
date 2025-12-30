@@ -14,11 +14,17 @@ L'attuale versione di BAS.I.LI.CO. è la 0.211.1. Lo 0 indica che non è stato l
 
 Scarica la cartella compressa appropriata per il tuo sistema operativo.
 
-Per Windows:
+Per Windows (64 bit):
 https://github.com/smaxmex/basilico/archive/refs/heads/windows.zip
 
-Per Linux:
+Per Windows (32 bit):
+https://github.com/smaxmex/basilico/archive/refs/heads/windows32.zip
+
+Per Linux (64 bit):
 https://github.com/smaxmex/basilico/archive/refs/heads/linux.zip
+
+Per Linux (32 bit):
+https://github.com/smaxmex/basilico/archive/refs/heads/linux32.zip
 
 Per macOS:
 https://github.com/smaxmex/basilico/archive/refs/heads/mac.zip

@@ -1,0 +1,4 @@
+if(oldstr3805){
+if(oldstr3805->fixed)qbs_set(oldstr3805,_FUNC_ADDQUOTES_STRING_S);
+qbs_free(_FUNC_ADDQUOTES_STRING_S);
+}

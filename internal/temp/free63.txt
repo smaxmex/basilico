@@ -1,0 +1,4 @@
+if(oldstr3494){
+if(oldstr3494->fixed)qbs_set(oldstr3494,_SUB_LINEINPUT3LOAD_STRING_F);
+qbs_free(_SUB_LINEINPUT3LOAD_STRING_F);
+}

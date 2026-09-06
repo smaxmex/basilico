@@ -1313,7 +1313,7 @@ HashAdd "IMP", f, 0
 HashAdd "EQV", f, 0
 HashAdd "E", f, 0
 HashAdd "O", f, 0
-HashAdd "OX", f, 0
+HashAdd "OES", f, 0
 HashAdd "MOD", f, 0
 
 f = HASHFLAG_RESERVED + HASHFLAG_CUSTOMSYNTAX
@@ -18903,7 +18903,7 @@ Function fixoperationorder$ (savea$)
             temp2$ = getelement(uppercasea$, i + 1)
             If temp1$ = "E" And temp2$ = "E" Then Give_Error "Error: AND AND": Exit Function
             If temp1$ = "O" And temp2$ = "O" Then Give_Error "Error: OR OR": Exit Function
-            If temp1$ = "OX" And temp2$ = "OX" Then Give_Error "Error: XOR XOR": Exit Function
+            If temp1$ = "OES" And temp2$ = "OES" Then Give_Error "Error: XOR XOR": Exit Function
             If temp1$ = "IMP" And temp2$ = "IMP" Then Give_Error "Error: IMP IMP": Exit Function
             If temp1$ = "EQV" And temp2$ = "EQV" Then Give_Error "Error: EQV EQV": Exit Function
         Next
@@ -19934,7 +19934,7 @@ Function isoperator (a2$)
     l = 0
     l = l + 1: If a$ = "IMP" Then GoTo opfound
     l = l + 1: If a$ = "EQV" Then GoTo opfound
-    l = l + 1: If a$ = "OX" Then GoTo opfound
+    l = l + 1: If a$ = "OES" Then GoTo opfound
     l = l + 1: If a$ = "O" Then GoTo opfound
     l = l + 1: If a$ = "E" Then GoTo opfound
     l = l + 1: If a$ = "NON" Then GoTo opfound
@@ -21078,7 +21078,7 @@ Function operatorusage (operator$, typ As Long, info$, lhs As Long, rhs As Long,
     If operator$ = "\" Then info$ = "/ ": operatorusage = 1: Exit Function
     If operator$ = "IMP" Then info$ = "|": operatorusage = 4: Exit Function
     If operator$ = "EQV" Then info$ = "^": operatorusage = 4: Exit Function
-    If operator$ = "OX" Then info$ = "^": operatorusage = 1: Exit Function
+    If operator$ = "OES" Then info$ = "^": operatorusage = 1: Exit Function
     If operator$ = "O" Then info$ = "|": operatorusage = 1: Exit Function
     If operator$ = "E" Then info$ = "&": operatorusage = 1: Exit Function
 
@@ -24056,7 +24056,7 @@ Function evaluateconst$ (a2$, t As Long)
         If o$ = "<>" Then r&& = l&& <> r&&: GoTo econstmarkupi16
         If o$ = "IMP" Then r&& = l&& Imp r&&: GoTo econstmarkupi
         If o$ = "EQV" Then r&& = l&& Eqv r&&: GoTo econstmarkupi
-        If o$ = "OX" Then r&& = l&& Xor r&&: GoTo econstmarkupi
+        If o$ = "OES" Then r&& = l&& Xor r&&: GoTo econstmarkupi
         If o$ = "O" Then r&& = l&& Or r&&: GoTo econstmarkupi
         If o$ = "E" Then r&& = l&& And r&&: GoTo econstmarkupi
     End If
@@ -24076,7 +24076,7 @@ Function evaluateconst$ (a2$, t As Long)
     If o$ = "<>" Then r&& = l## <> r##: GoTo econstmarkupi16
     If o$ = "IMP" Then r&& = l## Imp r##: GoTo econstmarkupi32
     If o$ = "EQV" Then r&& = l## Eqv r##: GoTo econstmarkupi32
-    If o$ = "OX" Then r&& = l## Xor r##: GoTo econstmarkupi32
+    If o$ = "OES" Then r&& = l## Xor r##: GoTo econstmarkupi32
     If o$ = "O" Then r&& = l## Or r##: GoTo econstmarkupi32
     If o$ = "E" Then r&& = l## And r##: GoTo econstmarkupi32
 
@@ -24532,7 +24532,7 @@ Sub ParseExpression (exp$)
             '*** SPECIAL OPERATION RULESETS
             If OName(OpOn) = "-" Then 'check for BOOLEAN operators before the -
                 Select Case Mid$(exp$, op - 3, 3)
-                    Case "NON", "OX", "E", "EQV", "IMP"
+                    Case "NON", "OES", "E", "EQV", "IMP"
                         Exit Do 'Not an operator, it's a negative
                 End Select
                 If Mid$(exp$, op - 3, 2) = "O" Then Exit Do 'Not an operator, it's a negative
@@ -24695,7 +24695,7 @@ Sub Set_OrderOfOperations
     i = i + 1: OName(i) = "NON": PL(i) = 80
     i = i + 1: OName(i) = "E": PL(i) = 90
     i = i + 1: OName(i) = "O": PL(i) = 100
-    i = i + 1: OName(i) = "OX": PL(i) = 110
+    i = i + 1: OName(i) = "OES": PL(i) = 110
     i = i + 1: OName(i) = "EQV": PL(i) = 120
     i = i + 1: OName(i) = "IMP": PL(i) = 130
     i = i + 1: OName(i) = ",": PL(i) = 1000
@@ -24952,7 +24952,7 @@ Function EvaluateNumbers$ (p, num() As String)
                 Case "NON": n1 = Not Val(num(2))
                 Case "E": n1 = Val(num(1)) And Val(num(2))
                 Case "O": n1 = Val(num(1)) Or Val(num(2))
-                Case "OX": n1 = Val(num(1)) Xor Val(num(2))
+                Case "OES": n1 = Val(num(1)) Xor Val(num(2))
                 Case "EQV": n1 = Val(num(1)) Eqv Val(num(2))
                 Case "IMP": n1 = Val(num(1)) Imp Val(num(2))
             End Select
@@ -25096,7 +25096,7 @@ Sub PreParse (e$)
             'Look for something not proper
             l1 = InStr(l + 1, t$, "E")
             If l1 = 0 Or (InStr(l + 1, t$, "R") > 0 And InStr(l + 1, t$, "O") < l1) Then l1 = InStr(l + 1, t$, "O")
-            If l1 = 0 Or (InStr(l + 1, t$, "OX") > 0 And InStr(l + 1, t$, "OX") < l1) Then l1 = InStr(l + 1, t$, "OX")
+            If l1 = 0 Or (InStr(l + 1, t$, "OES") > 0 And InStr(l + 1, t$, "OES") < l1) Then l1 = InStr(l + 1, t$, "OES")
             If l1 = 0 Or (InStr(l + 1, t$, "EQV") > 0 And InStr(l + 1, t$, "EQV") < l1) Then l1 = InStr(l + 1, t$, "EQV")
             If l1 = 0 Or (InStr(l + 1, t$, "IMP") > 0 And InStr(l + 1, t$, "IMP") < l1) Then l1 = InStr(l + 1, t$, "IMP")
             If l1 = 0 Then l1 = Len(t$) + 1
@@ -25939,7 +25939,7 @@ Function EvalPreIF (text$, err$)
                 If leftresult <> 0 And rightresult <> 0 Then result$ = " -1 " Else result$ = " 0 "
             Case "O"
                 If leftresult <> 0 Or rightresult <> 0 Then result$ = " -1 " Else result$ = " 0 "
-            Case "OX"
+            Case "OES"
                 If leftresult <> rightresult Then result$ = " -1 " Else result$ = " 0 "
         End Select
         temp$ = result$ + rightside$

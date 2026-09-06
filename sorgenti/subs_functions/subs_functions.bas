@@ -2473,11 +2473,11 @@ id.subfunc = 2
 id.callname = "sub_graphics_put"
 id.args = 5
 id.arg = MKL$(FLOATTYPE - ISPOINTER) + MKL$(FLOATTYPE - ISPOINTER) + MKL$(-3) + MKL$(LONGTYPE - ISPOINTER) + MKL$(ULONGTYPE - ISPOINTER)
-id.specialformat = "[{Passo}](?,?),?[,[{_Clip}][{Pixel|CPixel|E|O|Ox}][,?]]"
+id.specialformat = "[{Passo}](?,?),?[,[{_Clip}][{Pixel|CPixel|E|O|Oes}][,?]]"
 'PUT [PASSO] (x!,y!),arrayname# [(indexes%)] [,actionverb]
 'PUT (10, 10), myimage, _CLIP, 0
 id.secondargmustbe = "Passo"
-id.hr_syntax = "METTI [PASSO](column, row), Array([index])[,] [_CLIP]  [{PIXEL|CPIXEL|E|O|OX}]][, omitcolor]"
+id.hr_syntax = "METTI [PASSO](column, row), Array([index])[,] [_CLIP]  [{PIXEL|CPIXEL|E|O|OES}]][, omitcolor]"
 regid
 clearid
 id.n = "Metti"
@@ -2485,11 +2485,11 @@ id.subfunc = 2
 id.callname = "sub_graphics_put"
 id.args = 5
 id.arg = MKL$(FLOATTYPE - ISPOINTER) + MKL$(FLOATTYPE - ISPOINTER) + MKL$(-3) + MKL$(LONGTYPE - ISPOINTER) + MKL$(ULONGTYPE - ISPOINTER)
-id.specialformat = "[{Passo}](?,?),?[,[{_Clip}][{Pixel|CPixel|E|O|Ox}][,?]]"
+id.specialformat = "[{Passo}](?,?),?[,[{_Clip}][{Pixel|CPixel|E|O|Oes}][,?]]"
 'PUT [PASSO] (x!,y!),arrayname# [(indexes%)] [,actionverb]
 'PUT (10, 10), myimage, _CLIP, 0
 id.secondargmustbe = "("
-id.hr_syntax = "MESSTI [PASSO](column, row), Array([index])[,] [_CLIP]  [{PIXEL|CPIXEL|E|O|OX}]][, omitcolor]"
+id.hr_syntax = "MESSTI [PASSO](column, row), Array([index])[,] [_CLIP]  [{PIXEL|CPIXEL|E|O|OES}]][, omitcolor]"
 regid
 
 clearid

@@ -1,0 +1,4 @@
+/home/massimo/Scaricati/basilico-linux/sorgenti/global
+/home/massimo/Scaricati/basilico-linux/sorgenti/subs_functions
+/home/massimo/Scaricati/basilico-linux/sorgenti/utilities
+/home/massimo/Scaricati/basilico-linux/sorgenti/ide

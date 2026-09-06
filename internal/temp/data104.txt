@@ -1,0 +1,18 @@
+int32 *_SUB_DUMP_UDTS_LONG_F=NULL;
+if(_SUB_DUMP_UDTS_LONG_F==NULL){
+_SUB_DUMP_UDTS_LONG_F=(int32*)mem_static_malloc(4);
+*_SUB_DUMP_UDTS_LONG_F=0;
+}
+int32 *_SUB_DUMP_UDTS_LONG_I=NULL;
+if(_SUB_DUMP_UDTS_LONG_I==NULL){
+_SUB_DUMP_UDTS_LONG_I=(int32*)mem_static_malloc(4);
+*_SUB_DUMP_UDTS_LONG_I=0;
+}
+int64 fornext_value3755;
+int64 fornext_finalvalue3755;
+int64 fornext_step3755;
+uint8 fornext_step_negative3755;
+int64 fornext_value3759;
+int64 fornext_finalvalue3759;
+int64 fornext_step3759;
+uint8 fornext_step_negative3759;

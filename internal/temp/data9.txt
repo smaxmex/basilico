@@ -1,0 +1,13 @@
+int32 *_SUB_CLOSEMAIN_LONG_I=NULL;
+if(_SUB_CLOSEMAIN_LONG_I==NULL){
+_SUB_CLOSEMAIN_LONG_I=(int32*)mem_static_malloc(4);
+*_SUB_CLOSEMAIN_LONG_I=0;
+}
+int64 fornext_value2338;
+int64 fornext_finalvalue2338;
+int64 fornext_step2338;
+uint8 fornext_step_negative2338;
+int64 fornext_value2349;
+int64 fornext_finalvalue2349;
+int64 fornext_step2349;
+uint8 fornext_step_negative2349;

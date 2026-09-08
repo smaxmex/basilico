@@ -47,9 +47,9 @@ Avviare il file eseguibile basilico per avviare l'Ambiente di Sviluppo, che si p
 basilico -c tuoprogramma.bas
 ```
 
-Ne risulterà un file eseguibile di nome tuoprogramma.exe nei sistemi Windows e tuoprogramma per quelli GNU/Linux.
+Ne risulterà un file eseguibile di nome tuoprogramma.exe nei sistemi Windows e tuoprogramma per quelli GNU/Linux o macOS.
 
-Se si vuole dare un nome differente al file eseguibile si può usare la seguente riga di codice per i sistemi GNU/Linux:
+Se si vuole dare un nome differente al file eseguibile si può usare la seguente riga di codice per i sistemi GNU/Linux o macOS:
 
 ```bash
 basilico -c tuoprogramma.bas -o nomechevuoidarealtuoprogramma

@@ -14,17 +14,11 @@ L'attuale versione di BAS.I.LI.CO. è la 0.211.1. Lo 0 indica che non è stato l
 
 Scarica la cartella compressa appropriata per il tuo sistema operativo.
 
-Per Windows (64 bit):
+Per Windows:
 https://github.com/smaxmex/basilico/archive/refs/heads/windows.zip
 
-Per Windows (32 bit):
-https://github.com/smaxmex/basilico/archive/refs/heads/windows32.zip
-
-Per Linux (64 bit):
+Per Linux:
 https://github.com/smaxmex/basilico/archive/refs/heads/linux.zip
-
-Per Linux (32 bit):
-https://github.com/smaxmex/basilico/archive/refs/heads/linux32.zip
 
 Per macOS:
 https://github.com/smaxmex/basilico/archive/refs/heads/mac.zip
@@ -45,13 +39,7 @@ Dopo aver scaricato la cartella per macOS, bisogna rendere il file basilico eseg
 chmod +x basilico
 ```
 
-e si potrà quindi metterlo in esecuzione attraverso il comando seguente:
-
-```bash
-./basilico
-```
-
-## Uso
+### Uso
 
 Avviare il file eseguibile basilico per avviare l'Ambiente di Sviluppo, che si può usare per modificare i file .BAS. Da lì premere F5 per compilare ed eseguire il codice. Per generare un file binario senza eseguirlo, premere F11. Se non si vuole usare l'Ambiente di Sviluppo Integrato di BAS.I.LI.CO., bensì solo compilare il codice in basilico, si può usare la seguente chiamata da riga di comando:
 
@@ -59,9 +47,9 @@ Avviare il file eseguibile basilico per avviare l'Ambiente di Sviluppo, che si p
 basilico -c tuoprogramma.bas
 ```
 
-Ne risulterà un file eseguibile di nome tuoprogramma.exe nei sistemi Windows e tuoprogramma per quelli GNU/Linux.
+Ne risulterà un file eseguibile di nome tuoprogramma.exe nei sistemi Windows e tuoprogramma per quelli GNU/Linux o macOS.
 
-Se si vuole dare un nome differente al file eseguibile si può usare la seguente riga di codice per i sistemi GNU/Linux:
+Se si vuole dare un nome differente al file eseguibile si può usare la seguente riga di codice per i sistemi GNU/Linux o macOS:
 
 ```bash
 basilico -c tuoprogramma.bas -o nomechevuoidarealtuoprogramma

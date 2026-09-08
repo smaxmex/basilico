@@ -20,6 +20,9 @@ https://github.com/smaxmex/basilico/archive/refs/heads/windows.zip
 Per Linux:
 https://github.com/smaxmex/basilico/archive/refs/heads/linux.zip
 
+Per macOS:
+https://github.com/smaxmex/basilico/archive/refs/heads/mac.zip
+
 ### Windows
 
 Assicurati di estrarre il contenuto del pacchetto in una cartella con permessi di scrittura completi (in caso contrario potrebbero verificarsi errori dell'Ambiente di Sviluppo o di compilazione). Si consiglia di aggiungere la cartella BAS.I.LI.CO. alla lista bianca del tuo antivirus.
@@ -28,9 +31,12 @@ Assicurati di estrarre il contenuto del pacchetto in una cartella con permessi d
 
 Dipendenze: OpenGL, ALSA e GNU C++ Compiler. Oltre alla versione specifica per Linux, la versione di BAS.I.LI.CO. per Windows funziona pure usando WINE, permettendo così di creare facilmente software per Windows anche senza usare tale sistema operativo.
 
-### MacOS
+### macOS
 
-La cartella per MacOS non è stata ancora predisposta, ma si può già usare BAS.I.LI.CO. compilandolo dai sorgenti, tramite QB64.
+Dopo aver scaricato la cartella per macOS, bisogna rendere il file basilico eseguibile dando dal Terminale (dentro la cartella, dove si trova il file denominato "basilico") il seguente comando:
+
+```bash
+chmod +x basilico
 
 ## Uso
 

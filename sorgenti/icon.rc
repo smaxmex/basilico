@@ -1,0 +1,28 @@
+0 ICON "codice.ico"
+
+1 VERSIONINFO
+FILEVERSION     0,22,0,0
+PRODUCTVERSION  0,22,0,0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName","CO.DI.C.E.\0"
+            VALUE "FileDescription","CO.DI.C.E. Compiler\0"
+            VALUE "FileVersion","0.22\0"
+            VALUE "InternalName","codice.bas\0"
+            VALUE "LegalCopyright","LGPL\0"
+            VALUE "LegalTrademarks","\0"
+            VALUE "OriginalFilename","codice.exe\0"
+            VALUE "ProductName","CO.DI.C.E.\0"
+            VALUE "ProductVersion","0.22\0"
+            VALUE "Comments","CO.DI.C.E. è un linguaggio di programmazione BASIC in italiano che deriva dal QB64 e compila creando applicazioni per Windows, Linux e macOS.\0"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x04E4
+    END
+END

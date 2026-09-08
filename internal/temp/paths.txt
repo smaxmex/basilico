@@ -1,0 +1,13 @@
+/Users/macpro/Music
+/Users/macpro/Pictures
+/Users/macpro/Desktop
+/Users/macpro/Library
+/Users/macpro/Public
+/Users/macpro/.idlerc
+/Users/macpro/Movies
+/Users/macpro/Templates
+/Users/macpro/.Trash
+/Users/macpro/Documents
+/Users/macpro/Downloads
+/Users/macpro/.cache
+/Users/macpro/.zsh_sessions

@@ -37,8 +37,9 @@ Dopo aver scaricato la cartella per macOS, bisogna rendere il file basilico eseg
 
 ```bash
 chmod +x basilico
+```
 
-## Uso
+### Uso
 
 Avviare il file eseguibile basilico per avviare l'Ambiente di Sviluppo, che si può usare per modificare i file .BAS. Da lì premere F5 per compilare ed eseguire il codice. Per generare un file binario senza eseguirlo, premere F11. Se non si vuole usare l'Ambiente di Sviluppo Integrato di BAS.I.LI.CO., bensì solo compilare il codice in basilico, si può usare la seguente chiamata da riga di comando:
 
